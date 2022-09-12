@@ -1,0 +1,16 @@
+.cardServicios {
+    @include cards ($textColor: #803F40, $bgColor:#C9C9C9, $fontSize:16px);
+}
+
+.card-titleServicios{
+    color: $card-title;
+    margin-top: 15px;
+}
+
+.cardGaleria {
+    @include cards ($textColor: rgb(145, 255, 0), $bgColor:rgb(0, 51, 128), $fontSize:40px);
+}
+
+.card-titleGaleria {
+    margin: 15px;
+}

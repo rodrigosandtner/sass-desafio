@@ -1,0 +1,8 @@
+@mixin cards ($textColor, $bgColor, $fontSize){
+    border: solid 3px rgb(170, 170, 170);
+    color: $textColor;
+    background-color: $bgColor;
+    font-size: $fontSize;
+    border-radius: 10px;
+    margin: 40px;
+}

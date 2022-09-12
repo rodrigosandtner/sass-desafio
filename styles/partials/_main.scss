@@ -1,0 +1,76 @@
+/* PAGINA INICIO */
+.mainInicio {
+    @extend %displayMain !optional;
+    background-color: $backgroundMain;
+
+    .textoInicio {
+        font-family: 'Dancing Script', cursive;
+        font-size: 40px;
+        position: relative;
+        animation-name: animacionTexto;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+
+        @keyframes animacionTexto {
+            0% {
+                color: rgb(226, 185, 97);
+                left: -30px;
+            }
+
+            50% {
+                color: rgba(148, 79, 0, 0.753);
+                left: 30px;
+            }
+
+            100% {
+                color: rgb(226, 185, 97);
+                left: -30px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .textoInicio {
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+
+            @keyframes animacionTexto {
+                0% {
+                    color: rgb(226, 185, 97);
+                    left: -250px;
+                }
+
+                50% {
+                    color: rgba(148, 79, 0, 0.753);
+                    left: 250px;
+                }
+
+                100% {
+                    color: rgb(226, 185, 97);
+                    left: -249px;
+                }
+            }
+        }
+    }
+}
+
+/*Pagina Galeria*/
+ .mainGaleria{
+     background-color: $backgroundMain;
+     @extend %displayMain !optional;
+    }
+ .mainContacto{
+     background-color: $backgroundMain;
+     @extend %displayMain !optional;
+    }
+ .mainQuienSoy{
+     background-color: $backgroundMain;
+     @extend %displayMain !optional;
+    }
+ .mainServicios{
+     background-color: $backgroundMain;
+     @extend %displayMain !optional;
+ }
